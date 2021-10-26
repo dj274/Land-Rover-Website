@@ -1,0 +1,295 @@
+
+/* body tag no gaps between the sides */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* background of the navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  background-color:black;
+  opacity: 0.8;
+}
+
+/* land rover logo size */
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
+/* hover effect creates a shadow effect */
+.logo:hover {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* navbar display contents  to the right and aligns into the center */
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+/* nav content styling */
+nav ul a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(252, 252, 252);
+}
+
+/* hover effect changes colour to green and underlines the text */
+nav ul :hover {
+  border-bottom: 2px solid green;
+  color: green;
+}
+
+/* displays the range rover models to the center and evenly spaced out */
+.rover-cards {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 80vh;
+  align-items: center;
+}
+
+/* hover effect changes colour to green */
+.rover-cards :hover {
+  color: green;
+}
+
+/* styles the content */
+.rover-cards a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* Gives a height and width for the images */
+.rover {
+  width: 500px;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+/* display a background style */
+.range-rover-vogue {
+  display: flex;
+  height: max-content;
+  justify-content: center;
+  background-color: rgb(65, 64, 64);
+  padding: 15px;
+}
+
+/* display a background style */
+.grey-tile {
+  background-color: rgb(206, 205, 205);
+  align-items: center;
+}
+
+/* display a background style */
+.white-tile {
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+}
+
+/* defines width and height of the image */
+.vogue-img {
+  width: 800px;
+  height: fit-content;
+  margin: 20px 10px;
+}
+
+/* style effects of the 'EXPLORE' button */
+.explore-button {
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 90px;
+  margin: 0px 250px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+/* hover effects for the 'EXPLORE' button */
+.explore-button:hover {
+  background-color: rgb(0, 177, 0);
+  color: black;
+  transition: 0.5s;
+}
+
+/* doesn't underline the text in the button */
+a {
+  text-decoration: none;
+}
+
+/* display a background style */
+.picshow{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+/* display the slider image and styling */
+.slider{
+  width: 800px;
+  height:500px;
+  border-radius:30px;
+  overflow: hidden;
+}
+
+/* slides the images evenly */
+.slides{
+  width: 500%;
+  height:500%;
+  display: flex;
+  overflow: hidden;
+}
+
+/* does not display the input radio buttons */
+.slides input{
+  display: none;
+}
+
+/* slides to the next image smoothly */
+.slide{
+  transition:2s;
+}
+
+/* images in the slider */
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/* radio buttons moves as the images move giving the margin value */
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+/* radio buttons styling */
+.navigation-auto div{
+  border: 2px solid rgb(11, 133, 0);
+  padding: 5px;
+  border-radius:10px;
+  transition: 2s;
+}
+
+/* sets margin value for the radio buttons*/
+.navigation-auto div:not(:last-child){
+  margin-right: 50px;
+}
+
+/* changes background color to green when checked*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: rgb(60, 201, 0);
+}
+
+/* changes background color to green when checked*/
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: rgb(60, 201, 0);
+}
+
+/* changes background color to green when checked*/
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: rgb(60, 201, 0);
+}
+
+/* changes background color to green when checked*/
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: rgb(60, 201, 0);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+/* content of the car */
+.info-container{
+  color: rgb(255, 255, 255);
+  width: 500px;
+  padding: 50px;
+  margin: 0px 40px;
+  display: flex;
+  font-size: 20px;
+  height: fit-content;
+  text-align: justify;
+}
+
+/* video styling */
+.video{
+  width: 700vw;
+  height: 600px;
+  border-radius:30px;
+  overflow: hidden;
+}
+
+/* displaying all the images inline */
+.rangerover-cards {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 40px 0px;
+  border: 5px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  min-width: fit-content;
+  min-height: fit-content;
+  width: max-content;
+  align-self: center;
+}
+
+/* cards for the images and sets styling */
+.rangerover-cards1{
+  display: flex;
+  justify-content: space-evenly;
+  height: 80vh;
+  align-items: center;
+  background-color: rgb(65, 64, 64);
+  color: white;
+  text-align: justify;
+}
+
+/* content styling the cards */
+.rangerover-cards1 p {
+  justify-content: space-evenly;
+  text-align: justify;
+  margin: 15px;
+
+}
+
+/* spaces the title and paragraph evenly and to the center */ 
+.rangerover-cards1 article {
+justify-content: space-evenly;
+text-align: center;
+max-width: 500px;
+}
